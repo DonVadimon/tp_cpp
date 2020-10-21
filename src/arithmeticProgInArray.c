@@ -1,12 +1,6 @@
 #include "testy/arithmeticProgInArray.h"
 #include <assert.h>
 
-int private_ok_value = 2;
-
-int widget_ok(int a, int b) {
-  return a + b == private_ok_value;
-}
-
 int arithmeticProgInArray(int* source, int** dist, int size)
 {
 	assert(size > 0);
