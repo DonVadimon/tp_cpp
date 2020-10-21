@@ -20,7 +20,7 @@ jobs:
     - name: Configure
       run: sh configure.sh
     - name: Make
-      run: cd build && cmake . && make
+      run: cd build && cmake .. && make
     - name: Test
       run: cd build && make coverage && test/arithmeticProgInArray_tests
     - name: Archive code coverage results
@@ -28,11 +28,3 @@ jobs:
       with:
         name: code-coverage-report
         path: build/coverage/index.html
-
-  # google-test:
-  #   runs-on: ubuntu-20.04
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - run: cmake . 
-  #     - run: make
-  #     - run: test/arithmeticProgInArray_tests

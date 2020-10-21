@@ -14,7 +14,7 @@ if (CMAKE_BUILD_TYPE MATCHES Debug)
     NAME coverage
     EXECUTABLE valgrind --leak-check=full --show-leak-kinds=all ctest
     BASE_DIRECTORY "${PROJECT_SOURCE_DIR}"
-    EXCLUDE "build/*" "test/*" "src/main.c" "src/arithmeticProgInArray.c")
+    EXCLUDE "build/*" "test/*" "src/main.c" "src/customer.c")
 endif()
 
 # enable_testing()

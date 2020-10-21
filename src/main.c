@@ -1,6 +1,6 @@
-#include "testy/customer.h"
 #include "testy/arithmeticProgInArray.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
   printf("Введите размер массива\n");
@@ -31,5 +31,6 @@ int main() {
     printf("%d ", dist[i]);
 	}
   printf("\n");
+  free(arr);
   return 0;
 }
